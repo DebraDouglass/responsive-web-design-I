@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /*__________ MY CODE STARTS HERE!_____________________ */
 
-#wrapper {
+.wrapper {
   width: 1024px;
   margin: 0 auto;
   /* border: 1px solid black; */
@@ -79,33 +79,23 @@ h1, h2, h3, h4, h5 {
 	/* border: 1px solid black; */
 }
 
-.services-container {
+.home-container nav {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	border: 1px solid black;
-}
-
-nav {
-	display: flex;
-	width: 60%;
 	justify-content: space-between;
-	/* border: 1px solid black; */
-
+	width: 60%;
+	/* border: 1px solid black;*/
 }
 
 nav a {
 	font-size: 17px;
 	color: grey;
 	text-decoration: none;
-	padding: 20px 10px;
+	padding: 20px 10px; */
 	/* border: 1px solid black; */
 }
 
 .logo {
 	width: 40%;
-	height: 40px;
 	text-align: right;
 	/* border: 1px solid black; */
 }
@@ -126,7 +116,7 @@ nav a {
 
 .top-text {
 	padding: 40px;
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 }
 
 .bottom-text {
@@ -144,7 +134,7 @@ nav a {
 .contact {
 	width: 100%;
 	padding-top: 30px;
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 }
 
 .copyright {
@@ -154,3 +144,33 @@ nav a {
 	/* border: 1px solid black; */
 }
 
+/* .services-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border: 1px solid black;
+} */
+
+/* Responsive */
+
+@media(max-width: 800px) {
+
+	.home-container nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		/* border: 1px solid black;*/
+	}
+	
+	.home-container .round-image {
+		display: none;
+	}
+}
+
+@media(max-width: 500px) {
+	.wrapper {
+		margin: 0 auto;
+		width: 100%;
+	}
+}
